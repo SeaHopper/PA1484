@@ -1,0 +1,32 @@
+# Local credentials (copy secrets_example.py to secrets.py)
+/project/secrets.py
+
+# PlatformIO and generated device images
+/.pio/
+/device-build/
+/.sconsign*.dblite
+
+# Visual Studio Code generated project configuration
+/.vscode/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+/.cache/
+/.pytest_cache/
+/.mypy_cache/
+/.ruff_cache/
+.coverage
+htmlcov/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*~
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
