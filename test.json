@@ -1,0 +1,2805 @@
+{
+    "timestamp": "2026-10-07T16:46:50",
+    "query": {
+        "queryTime": "2026-10-07T16:46:00",
+        "query": "740000230"
+    },
+    "stops": [
+        {
+            "id": "230",
+            "name": "Karlskrona Centralstation",
+            "lat": 56.166709,
+            "lon": 15.585387,
+            "transport_modes": [
+                "BUS",
+                "TRAIN"
+            ],
+            "alerts": []
+        },
+        {
+            "id": "73624",
+            "name": "Karlskrona central",
+            "lat": 56.167057,
+            "lon": 15.585251,
+            "transport_modes": [
+                "TRAIN"
+            ],
+            "alerts": []
+        }
+    ],
+    "departures": [
+        {
+            "scheduled": "2026-10-07T16:42:23",
+            "realtime": "2026-10-07T16:46:27",
+            "delay": 244,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "150",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Karlskrona",
+                "origin": {
+                    "id": "24525",
+                    "name": "Kallinge F17"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100150000021000001",
+                "start_date": "2026-10-07",
+                "technical_number": 21
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:46:00",
+            "realtime": "2026-10-07T16:46:47",
+            "delay": 47,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "7",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Långö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24186",
+                    "name": "Långö"
+                }
+            },
+            "trip": {
+                "trip_id": "100007000044000002",
+                "start_date": "2026-10-07",
+                "technical_number": 44
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:46:48",
+            "realtime": "2026-10-07T16:46:48",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000077000002",
+                "start_date": "2026-10-07",
+                "technical_number": 77
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T16:47:33",
+            "realtime": "2026-10-07T16:53:34",
+            "delay": 361,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Saltö",
+                "origin": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                },
+                "destination": {
+                    "id": "24181",
+                    "name": "Saltö"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000133000001",
+                "start_date": "2026-10-07",
+                "technical_number": 133
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:47:48",
+            "realtime": "2026-10-07T16:50:58",
+            "delay": 190,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24431",
+                    "name": "Dalby"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000087000001",
+                "start_date": "2026-10-07",
+                "technical_number": 87
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:48:00",
+            "realtime": "2026-10-07T16:48:00",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": "Ø Karlskrona - Kristianstad - Malmö - København",
+                "designation": "802",
+                "transport_mode_code": 100,
+                "transport_mode": "TRAIN",
+                "direction": "Østerport",
+                "origin": {
+                    "id": "230",
+                    "name": "Karlskrona Centralstation"
+                },
+                "destination": {
+                    "id": "25317",
+                    "name": "København Østerport"
+                }
+            },
+            "trip": {
+                "trip_id": "121120000383763776",
+                "start_date": "2026-10-07",
+                "technical_number": 1125
+            },
+            "agency": {
+                "id": "500000000000000110",
+                "name": "110",
+                "operator": "VR Sverige AB"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230013",
+                "designation": "1"
+            },
+            "realtime_platform": {
+                "id": "9022050000230013",
+                "designation": "1"
+            },
+            "alerts": [
+                {
+                    "type": "OTHER_CAUSE",
+                    "title": "Förseningar",
+                    "text": "Tågen kan köra normalt igen mellan Mörrum och Karlshamn sedan klockan 16:19. Orsaken var stillastående tåg som blockerar spår. Vissa tåg är fortsatt försenade sedan tidigare."
+                }
+            ],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T16:48:05",
+            "realtime": "2026-10-07T16:50:28",
+            "delay": 143,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Verkö/Ferry via Lyckeby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24474",
+                    "name": "Verkö färjeterminalen"
+                }
+            },
+            "trip": {
+                "trip_id": "100006000082000001",
+                "start_date": "2026-10-07",
+                "technical_number": 82
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:48:14",
+            "realtime": "2026-10-07T16:50:01",
+            "delay": 107,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "150",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Ronneby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24525",
+                    "name": "Kallinge F17"
+                }
+            },
+            "trip": {
+                "trip_id": "100150000024000001",
+                "start_date": "2026-10-07",
+                "technical_number": 24
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:49:41",
+            "realtime": "2026-10-07T16:56:02",
+            "delay": 381,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Lyckeby",
+                "origin": {
+                    "id": "24181",
+                    "name": "Saltö"
+                },
+                "destination": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000134000001",
+                "start_date": "2026-10-07",
+                "technical_number": 134
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:51:48",
+            "realtime": "2026-10-07T16:56:45",
+            "delay": 297,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "2",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24204",
+                    "name": "Jämjö Parkvägen"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100002000077000004",
+                "start_date": "2026-10-07",
+                "technical_number": 77
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:52:48",
+            "realtime": "2026-10-07T17:02:10",
+            "delay": 562,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24474",
+                    "name": "Verkö färjeterminalen"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100006000075000002",
+                "start_date": "2026-10-07",
+                "technical_number": 75
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:53:05",
+            "realtime": "2026-10-07T16:53:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Nättraby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24431",
+                    "name": "Dalby"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000082000008",
+                "start_date": "2026-10-07",
+                "technical_number": 82
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T16:54:05",
+            "realtime": "2026-10-07T16:55:22",
+            "delay": 77,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "2",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Jämjö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24204",
+                    "name": "Jämjö Parkvägen"
+                }
+            },
+            "trip": {
+                "trip_id": "100002000082000001",
+                "start_date": "2026-10-07",
+                "technical_number": 82
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:57:33",
+            "realtime": "2026-10-07T16:59:45",
+            "delay": 132,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Saltö",
+                "origin": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                },
+                "destination": {
+                    "id": "24181",
+                    "name": "Saltö"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000135000001",
+                "start_date": "2026-10-07",
+                "technical_number": 135
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T16:58:05",
+            "realtime": "2026-10-07T16:58:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Rödeby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000084000004",
+                "start_date": "2026-10-07",
+                "technical_number": 84
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T16:59:41",
+            "realtime": "2026-10-07T17:00:48",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Lyckeby",
+                "origin": {
+                    "id": "24181",
+                    "name": "Saltö"
+                },
+                "destination": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000136000001",
+                "start_date": "2026-10-07",
+                "technical_number": 136
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:00:05",
+            "realtime": "2026-10-07T17:00:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "3",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Bastasjö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24133",
+                    "name": "Bastasjö"
+                }
+            },
+            "trip": {
+                "trip_id": "100003000084000002",
+                "start_date": "2026-10-07",
+                "technical_number": 84
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:01:36",
+            "realtime": "2026-10-07T17:04:15",
+            "delay": 159,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "3",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24133",
+                    "name": "Bastasjö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100003000079000001",
+                "start_date": "2026-10-07",
+                "technical_number": 79
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:04:00",
+            "realtime": "2026-10-07T17:04:00",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "7",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24186",
+                    "name": "Långö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100007000045000002",
+                "start_date": "2026-10-07",
+                "technical_number": 45
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:06:48",
+            "realtime": "2026-10-07T17:06:48",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000979000001",
+                "start_date": "2026-10-07",
+                "technical_number": 979
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:06:48",
+            "realtime": "2026-10-07T17:09:21",
+            "delay": 153,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000079000002",
+                "start_date": "2026-10-07",
+                "technical_number": 79
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:07:33",
+            "realtime": "2026-10-07T17:11:45",
+            "delay": 252,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Saltö",
+                "origin": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                },
+                "destination": {
+                    "id": "24181",
+                    "name": "Saltö"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000137000001",
+                "start_date": "2026-10-07",
+                "technical_number": 137
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:07:48",
+            "realtime": "2026-10-07T17:18:17",
+            "delay": 629,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24431",
+                    "name": "Dalby"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000089000002",
+                "start_date": "2026-10-07",
+                "technical_number": 89
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:08:05",
+            "realtime": "2026-10-07T17:09:13",
+            "delay": 68,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Verkö/Ferry via Lyckeby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24474",
+                    "name": "Verkö färjeterminalen"
+                }
+            },
+            "trip": {
+                "trip_id": "100006000084000001",
+                "start_date": "2026-10-07",
+                "technical_number": 84
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:09:06",
+            "realtime": "2026-10-07T17:10:13",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "8",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Hästö via Sjukhuset huvudentrén",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24172",
+                    "name": "Hästö"
+                }
+            },
+            "trip": {
+                "trip_id": "100008000046000001",
+                "start_date": "2026-10-07",
+                "technical_number": 46
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:09:41",
+            "realtime": "2026-10-07T17:10:48",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Lyckeby",
+                "origin": {
+                    "id": "24181",
+                    "name": "Saltö"
+                },
+                "destination": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000138000001",
+                "start_date": "2026-10-07",
+                "technical_number": 138
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:11:48",
+            "realtime": "2026-10-07T17:17:13",
+            "delay": 325,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "2",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24204",
+                    "name": "Jämjö Parkvägen"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100002000079000002",
+                "start_date": "2026-10-07",
+                "technical_number": 79
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:11:57",
+            "realtime": "2026-10-07T17:12:47",
+            "delay": 50,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "8",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24172",
+                    "name": "Hästö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100008000045000001",
+                "start_date": "2026-10-07",
+                "technical_number": 45
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:12:48",
+            "realtime": "2026-10-07T17:12:48",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24474",
+                    "name": "Verkö färjeterminalen"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100006000077000001",
+                "start_date": "2026-10-07",
+                "technical_number": 77
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:13:05",
+            "realtime": "2026-10-07T17:14:13",
+            "delay": 68,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Nättraby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24431",
+                    "name": "Dalby"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000086000002",
+                "start_date": "2026-10-07",
+                "technical_number": 86
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:13:05",
+            "realtime": "2026-10-07T17:13:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Nättraby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24431",
+                    "name": "Dalby"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000986000004",
+                "start_date": "2026-10-07",
+                "technical_number": 986
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:14:05",
+            "realtime": "2026-10-07T17:22:24",
+            "delay": 499,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "2",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Jämjö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24204",
+                    "name": "Jämjö Parkvägen"
+                }
+            },
+            "trip": {
+                "trip_id": "100002000086000002",
+                "start_date": "2026-10-07",
+                "technical_number": 86
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:15:31",
+            "realtime": "2026-10-07T17:15:31",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6500",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Kalmar",
+                "origin": {
+                    "id": "24116",
+                    "name": "Kungsplan"
+                },
+                "destination": {
+                    "id": "20",
+                    "name": "Kalmar Centralstation"
+                }
+            },
+            "trip": {
+                "trip_id": "106500000018000001",
+                "start_date": "2026-10-07",
+                "technical_number": 18
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:16:00",
+            "realtime": "2026-10-07T17:16:38",
+            "delay": 38,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "7",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Långö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24186",
+                    "name": "Långö"
+                }
+            },
+            "trip": {
+                "trip_id": "100007000046000003",
+                "start_date": "2026-10-07",
+                "technical_number": 46
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:17:33",
+            "realtime": "2026-10-07T17:21:15",
+            "delay": 222,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Saltö",
+                "origin": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                },
+                "destination": {
+                    "id": "24181",
+                    "name": "Saltö"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000139000001",
+                "start_date": "2026-10-07",
+                "technical_number": 139
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:18:05",
+            "realtime": "2026-10-07T17:18:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Rödeby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000086000001",
+                "start_date": "2026-10-07",
+                "technical_number": 86
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:19:41",
+            "realtime": "2026-10-07T17:20:48",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Lyckeby",
+                "origin": {
+                    "id": "24181",
+                    "name": "Saltö"
+                },
+                "destination": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000140000001",
+                "start_date": "2026-10-07",
+                "technical_number": 140
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:20:05",
+            "realtime": "2026-10-07T17:21:13",
+            "delay": 68,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "3",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Bastasjö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24133",
+                    "name": "Bastasjö"
+                }
+            },
+            "trip": {
+                "trip_id": "100003000088000006",
+                "start_date": "2026-10-07",
+                "technical_number": 88
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:21:36",
+            "realtime": "2026-10-07T17:25:00",
+            "delay": 204,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "3",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24133",
+                    "name": "Bastasjö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100003000081000002",
+                "start_date": "2026-10-07",
+                "technical_number": 81
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:26:48",
+            "realtime": "2026-10-07T17:26:48",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000081000002",
+                "start_date": "2026-10-07",
+                "technical_number": 81
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:27:33",
+            "realtime": "2026-10-07T17:31:01",
+            "delay": 208,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Saltö",
+                "origin": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                },
+                "destination": {
+                    "id": "24181",
+                    "name": "Saltö"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000141000001",
+                "start_date": "2026-10-07",
+                "technical_number": 141
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:27:48",
+            "realtime": "2026-10-07T17:27:48",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24431",
+                    "name": "Dalby"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000091000004",
+                "start_date": "2026-10-07",
+                "technical_number": 91
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:28:05",
+            "realtime": "2026-10-07T17:29:13",
+            "delay": 68,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Verkö/Ferry via Lyckeby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24474",
+                    "name": "Verkö färjeterminalen"
+                }
+            },
+            "trip": {
+                "trip_id": "100006000086000002",
+                "start_date": "2026-10-07",
+                "technical_number": 86
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:29:41",
+            "realtime": "2026-10-07T17:30:48",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Lyckeby",
+                "origin": {
+                    "id": "24181",
+                    "name": "Saltö"
+                },
+                "destination": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000142000001",
+                "start_date": "2026-10-07",
+                "technical_number": 142
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:30:46",
+            "realtime": "2026-10-07T17:32:13",
+            "delay": 87,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "123",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Sturkö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24298",
+                    "name": "Sanda"
+                }
+            },
+            "trip": {
+                "trip_id": "100123000016000002",
+                "start_date": "2026-10-07",
+                "technical_number": 16
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:31:48",
+            "realtime": "2026-10-07T17:35:32",
+            "delay": 224,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "2",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24204",
+                    "name": "Jämjö Parkvägen"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100002000081000002",
+                "start_date": "2026-10-07",
+                "technical_number": 81
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:33:05",
+            "realtime": "2026-10-07T17:33:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "5",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Nättraby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24431",
+                    "name": "Dalby"
+                }
+            },
+            "trip": {
+                "trip_id": "100005000090000001",
+                "start_date": "2026-10-07",
+                "technical_number": 90
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:34:00",
+            "realtime": "2026-10-07T17:34:00",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "7",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24186",
+                    "name": "Långö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100007000047000003",
+                "start_date": "2026-10-07",
+                "technical_number": 47
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:34:05",
+            "realtime": "2026-10-07T17:34:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "2",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Jämjö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24204",
+                    "name": "Jämjö Parkvägen"
+                }
+            },
+            "trip": {
+                "trip_id": "100002000090000002",
+                "start_date": "2026-10-07",
+                "technical_number": 90
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:37:33",
+            "realtime": "2026-10-07T17:41:15",
+            "delay": 222,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Saltö",
+                "origin": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                },
+                "destination": {
+                    "id": "24181",
+                    "name": "Saltö"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000143000001",
+                "start_date": "2026-10-07",
+                "technical_number": 143
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:38:05",
+            "realtime": "2026-10-07T17:38:05",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "4",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Rödeby",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24332",
+                    "name": "Rödebyholm"
+                }
+            },
+            "trip": {
+                "trip_id": "100004000088000002",
+                "start_date": "2026-10-07",
+                "technical_number": 88
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:39:06",
+            "realtime": "2026-10-07T17:40:13",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "8",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Hästö via Sjukhuset huvudentrén",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24172",
+                    "name": "Hästö"
+                }
+            },
+            "trip": {
+                "trip_id": "100008000048000001",
+                "start_date": "2026-10-07",
+                "technical_number": 48
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:39:41",
+            "realtime": "2026-10-07T17:40:48",
+            "delay": 67,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "1",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Lyckeby",
+                "origin": {
+                    "id": "24181",
+                    "name": "Saltö"
+                },
+                "destination": {
+                    "id": "24508",
+                    "name": "Lyckeby Slottsbacken"
+                }
+            },
+            "trip": {
+                "trip_id": "103001000144000001",
+                "start_date": "2026-10-07",
+                "technical_number": 144
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:41:57",
+            "realtime": "2026-10-07T17:42:44",
+            "delay": 47,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "8",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24172",
+                    "name": "Hästö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100008000047000001",
+                "start_date": "2026-10-07",
+                "technical_number": 47
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:42:00",
+            "realtime": "2026-10-07T17:42:00",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "3",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24133",
+                    "name": "Bastasjö"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100003000083000003",
+                "start_date": "2026-10-07",
+                "technical_number": 83
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:42:00",
+            "realtime": "2026-10-07T17:42:00",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": "Krösatåg Öst",
+                "designation": "8660",
+                "transport_mode_code": 106,
+                "transport_mode": "TRAIN",
+                "direction": "Emmaboda",
+                "origin": {
+                    "id": "73624",
+                    "name": "Karlskrona central"
+                },
+                "destination": {
+                    "id": "96",
+                    "name": "Emmaboda station"
+                }
+            },
+            "trip": {
+                "trip_id": "400000000000000474",
+                "start_date": "2026-10-07",
+                "technical_number": 8660
+            },
+            "agency": {
+                "id": "500000000000000793",
+                "name": "Krösatåg Öst",
+                "operator": "Krösatåg Öst"
+            },
+            "stop": {
+                "id": "73624",
+                "name": "Karlskrona central",
+                "lat": 56.167057,
+                "lon": 15.585251
+            },
+            "scheduled_platform": null,
+            "realtime_platform": null,
+            "alerts": [],
+            "is_realtime": false
+        },
+        {
+            "scheduled": "2026-10-07T17:42:23",
+            "realtime": "2026-10-07T17:47:54",
+            "delay": 331,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "150",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Karlskrona",
+                "origin": {
+                    "id": "24525",
+                    "name": "Kallinge F17"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100150000023000001",
+                "start_date": "2026-10-07",
+                "technical_number": 23
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:42:48",
+            "realtime": "2026-10-07T17:46:32",
+            "delay": 224,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "6",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Centrum",
+                "origin": {
+                    "id": "24474",
+                    "name": "Verkö färjeterminalen"
+                },
+                "destination": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                }
+            },
+            "trip": {
+                "trip_id": "100006000079000004",
+                "start_date": "2026-10-07",
+                "technical_number": 79
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "realtime_platform": {
+                "id": "9022050000230001",
+                "designation": "A"
+            },
+            "alerts": [],
+            "is_realtime": true
+        },
+        {
+            "scheduled": "2026-10-07T17:46:00",
+            "realtime": "2026-10-07T17:46:00",
+            "delay": 0,
+            "canceled": false,
+            "route": {
+                "name": null,
+                "designation": "7",
+                "transport_mode_code": 700,
+                "transport_mode": "BUS",
+                "direction": "Långö",
+                "origin": {
+                    "id": "24481",
+                    "name": "Karlskrona centrum"
+                },
+                "destination": {
+                    "id": "24186",
+                    "name": "Långö"
+                }
+            },
+            "trip": {
+                "trip_id": "100007000048000002",
+                "start_date": "2026-10-07",
+                "technical_number": 48
+            },
+            "agency": {
+                "id": "505000000000000010",
+                "name": "Blekinge",
+                "operator": "Connect Bus"
+            },
+            "stop": {
+                "id": "230",
+                "name": "Karlskrona Centralstation",
+                "lat": 56.166709,
+                "lon": 15.585387
+            },
+            "scheduled_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "realtime_platform": {
+                "id": "9022050000230002",
+                "designation": "B"
+            },
+            "alerts": [],
+            "is_realtime": false
+        }
+    ]
+}
