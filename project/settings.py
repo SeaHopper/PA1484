@@ -1,49 +1,71 @@
-"""Load and save the default settings."""
+"""Save the selected Trafiklab stop, transport type and theme."""
 
 import json
 import os
 
-from departures import STOPS, TRANSPORT_TYPES
-
-SETTINGS_PATH = "settings.json"
-FACTORY_DEFAULTS = {"stop": "All stops", "transport_type": "All", "dark_mode": False}
-STOP_OPTIONS = ("All stops",) + STOPS
+TRANSPORT_TYPES = ("All", "Train", "Bus", "Ferry")
+FACTORY_DEFAULTS = {
+    "stop_id": "740000230",
+    "stop_name": "Karlskrona Centralstation",
+    "transport_type": "All",
+    "dark_mode": True,
+    "live_mode": True,
+}
 
 
 def validate_settings(value):
-    'Function: Checks that the settings contain valid values'
     if not isinstance(value, dict):
-        raise ValueError("Settings must be an object")
-    if value.get("stop") not in STOP_OPTIONS:
-        raise ValueError("Unknown stop")
+        raise ValueError("Invalid settings")
+    stop_id = value.get("stop_id")
+    name = value.get("stop_name")
+    if not isinstance(stop_id, str) or not stop_id.isdigit():
+        raise ValueError("Invalid stop ID")
+    if not isinstance(name, str) or not name.strip() or len(name) > 200:
+        raise ValueError("Invalid stop name")
     if value.get("transport_type") not in TRANSPORT_TYPES:
-        raise ValueError("Unknown transport type")
-    if not isinstance(value.get("dark_mode"), bool):
-        raise ValueError("Dark mode must be a boolean")
+        raise ValueError("Invalid transport type")
+    for option in ("dark_mode", "live_mode"):
+        if not isinstance(value.get(option), bool):
+            raise ValueError("Invalid setting: " + option)
     return {key: value[key] for key in FACTORY_DEFAULTS}
 
 
-def load_settings(path=SETTINGS_PATH):
-    'Function: Loads saved settings or uses the starting defaults'
+def load_settings(path="settings.json"):
+    missing = False
     try:
-        with open(path, "r") as stream:
-            return validate_settings(json.load(stream)), ""
+        with open(path, "r") as file:
+            return validate_settings(json.load(file)), ""
     except OSError as error:
-        if error.args and error.args[0] == 2:  # Filen finns inte ännu
-            return dict(FACTORY_DEFAULTS), ""
-        return dict(FACTORY_DEFAULTS), "Cannot read saved settings; using defaults"
+        missing = bool(error.args and error.args[0] == 2)
     except (ValueError, TypeError):
-        return dict(FACTORY_DEFAULTS), "Invalid saved settings; using defaults"
+        pass
+    # En tidigare giltig fil kan användas om senaste sparningen avbröts.
+    try:
+        with open(path + ".bak", "r") as file:
+            return validate_settings(json.load(file)), "Recovered previous saved settings"
+    except (OSError, ValueError, TypeError):
+        return dict(FACTORY_DEFAULTS), ("" if missing else
+            "Old or invalid settings; using defaults")
 
 
-def save_settings(value, path=SETTINGS_PATH):
-    'Function: Saves settings through a temporary file'
-    validated = validate_settings(value)
+def save_settings(value, path="settings.json"):
+    value = validate_settings(value)
     temporary = path + ".tmp"
     try:
-        with open(temporary, "w") as stream:
-            json.dump(validated, stream)
-        # Använd replace på datorn och rename på MicroPython.
+        previous = None
+        try:
+            with open(path, "r") as file:
+                previous = validate_settings(json.load(file))
+        except (ValueError, TypeError):
+            pass
+        except OSError as error:
+            if not error.args or error.args[0] != 2:
+                raise
+        if previous is not None:
+            with open(path + ".bak", "w") as file:
+                json.dump(previous, file)
+        with open(temporary, "w") as file:
+            json.dump(value, file)
         replace = getattr(os, "replace", os.rename)
         replace(temporary, path)
     except OSError:
@@ -52,4 +74,4 @@ def save_settings(value, path=SETTINGS_PATH):
         except OSError:
             pass
         raise
-    return validated
+    return value
