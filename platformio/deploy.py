@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(env.subst("$PROJECT_DIR"))
 sys.path.insert(0, str(ROOT / "platformio"))
 from firmware_layout import find_vfs_partition
+from board_port import wait_for_upload_port
 
 
 PROJECT_SOURCE = ROOT / "project"
@@ -20,8 +21,6 @@ SUPPORT = ROOT / "support"
 BUILD = ROOT / "device-build"
 VFS_ROOT = BUILD / "vfs-root"
 VFS_IMAGE = BUILD / "t4s3-vfs.img"
-VFS_DEPLOY_IMAGE = BUILD / "t4s3-vfs-deploy.img"
-VFS_DEPLOY_SIZE = 0x20000
 FIRMWARE = ROOT / "firmware" / "t4s3-lvgl-micropython.bin"
 
 PIO_PACKAGES = Path(env.subst("$PROJECT_PACKAGES_DIR"))
@@ -45,6 +44,13 @@ PROJECT_EXCLUDES = {
     ".DS_Store",
     "Thumbs.db",
     "Desktop.ini",
+    # Host-only files: not needed on the board.
+    "tests",
+    "upload_project.py",
+    "README.md",
+    "TESTING.md",
+    "SKELETON_VERIFICATION.json",
+    ".gitignore",
 }
 
 
@@ -102,25 +108,26 @@ def build_app_fs(source=None, target=None, env=None):
          "-s", str(vfs_size), str(VFS_IMAGE)],
         check=True,
     )
-    with VFS_IMAGE.open("rb") as source_stream, \
-            VFS_DEPLOY_IMAGE.open("wb") as target_stream:
-        target_stream.write(source_stream.read(VFS_DEPLOY_SIZE))
-    print("Python application packaged: %s" % VFS_DEPLOY_IMAGE)
+    # Partial (128 KB) image from older versions: remove so it is never flashed.
+    (BUILD / "t4s3-vfs-deploy.img").unlink(missing_ok=True)
+    print("Python application packaged: %s" % VFS_IMAGE)
 
 
 def run_esptool(images):
     require(ESPTOOL, "PlatformIO esptool")
     for _offset, image in images:
         require(image, "flash image")
-    env.AutodetectUploadPort()
-    port = env.subst("$UPLOAD_PORT")
+    # PlatformIO's own autodetect can pick a Bluetooth COM port, and it cannot
+    # flash a board whose app is running; board_port handles both cases.
+    port = wait_for_upload_port(env.subst("$UPLOAD_PORT") or None)
+    print("Uploading on %s - this takes a few minutes, do not unplug." % port)
     command = [
         sys.executable, str(ESPTOOL),
         "--chip", "esp32s3",
         "--port", port,
         "--baud", env.subst("$UPLOAD_SPEED"),
-        "--before", "usb_reset",
-        "--after", "hard_reset",
+        "--before", "no_reset",     # already in upload mode (board_port)
+        "--after", "hard_reset",    # starts the app when flashing is done
         "write_flash",
         "--flash_mode", "keep",
         "--flash_size", "keep",
@@ -134,10 +141,13 @@ def flash_micropython(source=None, target=None, env=None):
     run_esptool([("0x0", FIRMWARE)])
 
 
+# Always flash the COMPLETE filesystem image. Writing only the 128 KB prefix
+# leaves stale data in the rest of the FAT, which corrupts files on the board
+# (SyntaxErrors at boot and a black screen).
 def flash_app(source=None, target=None, env=None):
     build_app_fs()
     vfs_offset, _vfs_size = find_vfs_partition(FIRMWARE)
-    run_esptool([(hex(vfs_offset), VFS_DEPLOY_IMAGE)])
+    run_esptool([(hex(vfs_offset), VFS_IMAGE)])
 
 
 def deploy_all(source=None, target=None, env=None):
@@ -145,7 +155,7 @@ def deploy_all(source=None, target=None, env=None):
     vfs_offset, _vfs_size = find_vfs_partition(FIRMWARE)
     run_esptool([
         ("0x0", FIRMWARE),
-        (hex(vfs_offset), VFS_DEPLOY_IMAGE),
+        (hex(vfs_offset), VFS_IMAGE),
     ])
 
 
