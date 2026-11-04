@@ -1,40 +1,75 @@
-"""Demo departures used by the departure screen."""
+"""Turn a Trafiklab departures response into simple table rows."""
 
-TRANSPORT_TYPES = ("All", "Train", "Bus", "Ferry")
-STOPS = ("Campus Gräsvik", "Karlskrona Centralstation", "Stortorget",
-         "Bergåsa", "Stumholmen")
-
-# Testdata, inte riktiga avgångstider.
-# Tid, linje, destination, status, transportsätt.
-DEMO_DEPARTURES = (
-    ("10:00", "1", "Campus Gräsvik", "Departed", "Bus"),
-    ("10:05", "2", "Karlskrona Centralstation", "On time", "Bus"),
-    ("10:10", "3", "Stortorget", "Delayed", "Bus"),
-    ("10:15", "4", "Bergåsa", "On time", "Train"),
-    ("10:20", "5", "Stumholmen", "Cancelled", "Ferry"),
-    ("10:25", "1", "Campus Gräsvik", "On time", "Bus"),
-    ("10:30", "2", "Karlskrona Centralstation", "Delayed", "Train"),
-    ("10:35", "5", "Stumholmen", "On time", "Ferry"),
-)
+VALID_MODES = ("ALL", "BUS", "TRAIN", "BOAT")
 
 
-def get_demo_departures(transport_type="All", stop=None):
-    'Function: Filters demo departures by stop and transport type'
-    if transport_type not in TRANSPORT_TYPES:
-        raise ValueError("Unknown transport type")
-    if stop is not None and stop not in STOPS:
-        raise ValueError("Unknown stop")
-    # Destinationer som visas för varje hållplats i demon.
-    destinations = {
-        None: STOPS,
-        STOPS[0]: (STOPS[1], STOPS[2], STOPS[3]),
-        STOPS[1]: (STOPS[0], STOPS[2], STOPS[3], STOPS[4]),
-        STOPS[2]: (STOPS[0], STOPS[1], STOPS[4]),
-        STOPS[3]: (STOPS[0], STOPS[1]),
-        STOPS[4]: (STOPS[1], STOPS[2]),
-    }
-    return [
-        row for row in DEMO_DEPARTURES
-        if (transport_type == "All" or row[4] == transport_type)
-        and row[2] in destinations[stop]
-    ]
+def _time_hhmm(timestamp):
+    """'2026-11-04T19:09:00' -> '19:09' ('--:--' if missing or malformed)."""
+    if isinstance(timestamp, str) and len(timestamp) >= 16 and timestamp[10] == "T":
+        return timestamp[11:16]
+    return "--:--"
+
+
+def _valid_time(timestamp):
+    return timestamp if _time_hhmm(timestamp) != "--:--" else None
+
+
+def _status(canceled, is_realtime, delay):
+    if canceled:
+        return "Inställd"
+    if not is_realtime:
+        return "Enligt tidtabell"
+    if delay >= 60:
+        return "Försenad"
+    if delay <= -60:
+        return "Tidigare"
+    return "I tid"
+
+
+def parse_departures(data, transport_mode="ALL", limit=None):
+    """Return departures sorted by time, optionally filtered and limited."""
+    if transport_mode not in VALID_MODES:
+        raise ValueError("Unknown transport mode")
+    if not isinstance(data, dict) or not isinstance(data.get("departures"), list):
+        raise ValueError("Invalid Trafiklab departure data")
+    if limit is not None and (type(limit) is not int or limit < 0):
+        raise ValueError("Invalid departure limit")
+
+    result = []
+    for departure in data["departures"]:
+        if not isinstance(departure, dict):
+            continue
+        route = departure.get("route") or {}
+        if not isinstance(route, dict):
+            continue
+        mode = route.get("transport_mode") or "UNKNOWN"
+        if transport_mode != "ALL" and mode != transport_mode:
+            continue
+        destination = route.get("destination")
+        if not isinstance(destination, dict):
+            destination = {}
+
+        scheduled = _valid_time(departure.get("scheduled"))
+        realtime = _valid_time(departure.get("realtime"))
+        is_realtime = departure.get("is_realtime") is True and realtime is not None
+        canceled = departure.get("canceled") is True
+        delay = departure.get("delay") or 0
+        if not isinstance(delay, (int, float)):
+            delay = 0
+        # A cancelled trip shows its timetable time; otherwise prefer realtime.
+        shown_time = realtime if is_realtime and not canceled else scheduled
+        shown_time = shown_time or scheduled
+
+        result.append({
+            "time": _time_hhmm(shown_time),
+            "departure_datetime": shown_time,
+            "scheduled_time": _time_hhmm(scheduled),
+            "line": route.get("designation") or route.get("name") or "-",
+            "destination": destination.get("name") or route.get("direction") or "Okänd",
+            "transport_mode": mode,
+            "status": _status(canceled, is_realtime, delay),
+            "delay_seconds": delay,
+        })
+
+    result.sort(key=lambda item: item["departure_datetime"] or "9999")
+    return result if limit is None else result[:limit]
