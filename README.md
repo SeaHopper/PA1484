@@ -8,6 +8,27 @@ This document will guide you through the setup process and help you prepare to w
 The supplied firmware already contains MicroPython and LVGL. You write Python;
 you do not compile MicroPython, LVGL, or a GUI library.
 
+## Our project: Public Transport Information on ESP32 (PA1484, Group 22)
+
+The app shows live public transport departures from
+[Trafiklab](https://www.trafiklab.se/) on the LilyGO T4-S3 touch screen.
+
+- **Departures screen** – live departures for the chosen stop (default:
+  Karlskrona Centralstation), refreshed every 60 seconds, with a fixed
+  Time / Line / Destination / Status heading while the rows scroll.
+- **Find stop** – search any stop in Sweden with an on-screen Swedish
+  keyboard (å, ä, ö) and pick it from the results.
+- **Filters** – All, Bus, Train or Ferry.
+- **Demo mode** – clearly labelled fictional departures, for use without
+  Wi-Fi or an API key (switch on the Settings screen).
+- **Settings** – light/dark theme (dark is the default), save and restore
+  defaults.
+
+Swipe left/right to move between the start, Departures and Settings screens.
+What each file in `project/` does is described in
+[project/README.md](project/README.md); testing is described in
+[project/TESTING.md](project/TESTING.md).
+
 ---
 
 # How to get started
@@ -63,6 +84,12 @@ Once the board has firmware on it, **Flash Python application** is faster for
 everyday work: it writes only your `project/` files and leaves the firmware
 alone.
 
+5. If the terminal asks you to, hold **BOOT**, tap **RESET**, release
+   **BOOT**; the upload then continues by itself and restarts the board.
+   The same can be done from a terminal with `py -3 project\upload_project.py`
+   (add `--with-firmware` for a new board). See
+   [INSTRUCTIONS.md](INSTRUCTIONS.md) for details.
+
 ![PlatformIO tasks for this project](./assets/screenshot.png)
 
 ---
@@ -76,13 +103,23 @@ Your code belongs in the `/project` folder. The only place you should add, chang
 The T4-S3 has built-in Wi-Fi, but it cannot connect to eduroam. Use another
 network or a phone hotspot.
 
+It only supports **2.4 GHz** networks. Set a phone hotspot to 2.4 GHz
+(Android: Hotspot > AP band > 2.4 GHz; iPhone: turn on Maximise
+Compatibility).
+
 Add or modify the `project/secrets.py` file, then set the SSID
 (network name) and password.
 
 ```python
 WIFI_SSID      = "SSID"
 WIFI_PASSWORD  = "PWD"
+TRAFIKLAB_API_KEY = "YOUR_API_KEY"
 ```
+
+The `TRAFIKLAB_API_KEY` line is needed for live departures and stop search.
+Get a free key at [trafiklab.se](https://www.trafiklab.se/) for the
+"Trafiklab Realtime APIs" (Timetables and Stop Lookup). Without it the app
+still runs in demo mode. `project/secrets_example.py` shows the same lines.
 
 Never commit real credentials to GitHub. `project/secrets.py` is excluded by
 the supplied `.gitignore`.
@@ -128,6 +165,12 @@ upload mode cannot interrupt it. Enter upload mode by hand instead.
 
 The board stays in upload mode afterwards, so press **RESET** once when the
 upload finishes to start your application.
+
+> **Note (this project):** the updated uploader waits for you to do the
+> BOOT/RESET steps above and restarts the board by itself when the upload is
+> done, so normally no extra RESET is needed. Press RESET only if the screen
+> has not restarted after "Hard resetting via RTS pin". Make sure BOOT is
+> released before then, or the board stays in upload mode.
 
 Close PlatformIO Monitor first if it is running; anything else holding the
 serial port causes the same error.
