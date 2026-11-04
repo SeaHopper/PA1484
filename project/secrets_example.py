@@ -1,10 +1,5 @@
-"""Wi-Fi credentials template.
-
-Copy this file to secrets.py and fill in your own network. secrets.py is
-excluded by .gitignore so your credentials are never committed.
-
-The T4-S3 cannot connect to eduroam. Use another network or a phone hotspot.
-"""
-
-WIFI_SSID      = "SSID"
-WIFI_PASSWORD  = "PWD"
+# Copy these entries into your existing local secrets.py.
+# Keep your real credentials local. Do not commit secrets.py.
+WIFI_SSID = "YOUR_WIFI_NAME"
+WIFI_PASSWORD = "YOUR_WIFI_PASSWORD"
+TRAFIKLAB_API_KEY = "YOUR_API_KEY"
